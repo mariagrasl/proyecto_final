@@ -1,0 +1,127 @@
+@charset "UTF-8";
+/*Aspectos generales del sitio*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /*Fondo del sitio*/
+  background-image: url(../media/FONDO/background-1044837.jpg);
+  max-height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*Estilo de texto*/
+  font-family: "Raleway";
+  color: black;
+}
+
+/*Header y footer*/
+/*Aspectos del index*/
+.letrasLink {
+  font-size: 1rem;
+  font-weight: bold;
+  list-style: none;
+}
+
+#cv {
+  grid-area: cv;
+}
+
+#portfolio {
+  grid-area: portfolio;
+}
+
+#bio {
+  grid-area: bio;
+}
+
+#contact {
+  grid-area: contact;
+}
+
+/*Diseño responsive*/
+@media screen and (max-width: 767px) {
+  .menuDeNavegacion {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "cv portfolio" "bio contact";
+  }
+}
+@media screen and (min-width: 1024px) {
+  .menuDeNavegacion {
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  #cv, #bio {
+    padding-top: 25px;
+    padding-bottom: 20%;
+    align-items: baseline;
+  }
+  #portfolio, #contact {
+    padding-bottom: 25px;
+    padding-top: 20%;
+    align-items: baseline;
+  }
+}
+/*Aspectos del Currículum*/
+.curriculum {
+  font-size: large;
+}
+
+#scrollLink {
+  display: flex;
+  flex-direction: row;
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+/*Aspectos del portfolio*/
+#portfolioTitle {
+  display: inline-block;
+  position: -webkit-sticky;
+  position: sticky;
+  padding: 3px 3px 3px 3px;
+  margin: 3px 3px 3px 3px;
+}
+
+#flexPortfolio {
+  display: flex;
+  flex-direction: row;
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  justify-content: space-around;
+  list-style-type: none;
+  padding: 5px 5px 5px 5px;
+  margin: 5px 5px 5px 5px;
+  font-size: larger;
+}
+
+/*Aspectos del Sobre mí*/
+.aboutMe {
+  display: block;
+  padding: 3px 3px 3px 3px;
+  margin: 5px 5px 5px 5px;
+  font-size: large;
+  text-align: end;
+}
+
+/*Aspectos del Contacto*/
+.frame {
+  margin: 5px 5px 5px 5px;
+}
+
+.contacto {
+  display: block;
+  margin: 3px 3px 3px 3px;
+  font-size: larger;
+}/*# sourceMappingURL=proyecto.css.map */
