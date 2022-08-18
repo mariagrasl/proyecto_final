@@ -15,7 +15,7 @@ body {
   background-size: cover;
   /*Estilo de texto*/
   font-family: "Raleway";
-  color: black;
+  color: #218008;
 }
 
 /*Header y footer*/
@@ -124,4 +124,5 @@ body {
   display: block;
   margin: 3px 3px 3px 3px;
   font-size: larger;
+  background-color: #580C74;
 }/*# sourceMappingURL=proyecto.css.map */

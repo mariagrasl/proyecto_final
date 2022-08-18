@@ -1,5 +1,7 @@
 /*Aspectos generales del sitio*/
 
+@import "colors";
+
 *{
     margin: 0;
     padding: 0;
@@ -20,7 +22,7 @@ body{
 /*Estilo de texto*/
 
     font-family: 'Raleway';
-    color: black;
+    color: $mygreen;
 }
 
 /*Header y footer*/
@@ -135,4 +137,5 @@ body{
     display: block;
     margin: 3px 3px 3px 3px;
     font-size: larger;
+    background-color: $mypurple;
 }
