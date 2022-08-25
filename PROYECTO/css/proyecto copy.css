@@ -115,8 +115,6 @@ body{
 
 /*Aspectos del Sobre mí*/
 
-
-
 .aboutMe{
     display: block;
     padding: 3px 3px 3px 3px;
@@ -124,6 +122,8 @@ body{
     font-size: large;
     text-align: end;
 }
+
+
 
 /*Aspectos del Contacto*/
 

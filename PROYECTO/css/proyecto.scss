@@ -119,12 +119,22 @@ body{
 
 
 
+/*GRID*/
+
+#historia{
+    grid-area: historia;
+}
+
+#video{
+    grid-area: video;
+}
+
 .aboutMe{
-    display: block;
-    padding: 3px 3px 3px 3px;
-    margin: 5px 5px 5px 5px;
+    display: grid;
+    grid-template-columns: 33% 34% 33%;
+    grid-template-rows: 15% 30% 55%;
+    grid-template-areas: "historia historia historia" "historia historia video" "historia historia video"; 
     font-size: large;
-    text-align: end;
 }
 
 /*Aspectos del Contacto*/
