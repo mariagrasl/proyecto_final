@@ -22,18 +22,26 @@ body{
 /*Estilo de texto*/
 
     font-family: 'Raleway';
-    color: $mygreen;
+    color: $mypurple;
 }
 
-/*Header y footer*/
-
-/*Aspectos del index*/
 
 .letrasLink{
     font-size: 1rem;
     font-weight: bold;
     list-style: none;
 }
+
+/*Header y footer*/
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+/*Aspectos del index*/
 
 #cv{
     grid-area: cv;
@@ -83,16 +91,41 @@ body{
 
 /*Aspectos del Currículum*/
 
-.curriculum{
-    font-size: large;
-}
-
 #scrollLink{
+    grid-area: scrollLink;
     display: flex;
     flex-direction: row;
     max-height: fit-content;
     justify-content: space-around;
     list-style-type: none;
+}
+
+#formacion{
+    grid-area: formacion;
+}
+
+#experiencia{
+    grid-area: experiencia;
+}
+
+#lenguajes{
+    grid-area: lenguajes;
+}
+
+#descargar{
+    grid-area: descargar;
+    margin-bottom: 10%;
+    margin-right: 5%;
+    width: 10%;
+    justify-self: end;
+}
+
+.curriculum{
+    font-size: large;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 200px auto auto auto auto;
+    grid-template-areas: "scrollLink" "formacion" "experiencia" "lenguajes" "descargar";
 }
 
 /*Aspectos del portfolio*/
@@ -117,35 +150,40 @@ body{
 
 /*Aspectos del Sobre mí*/
 
-
-
 /*GRID*/
 
 #historia{
     grid-area: historia;
 }
 
+#cita{
+    grid-area: cita;
+}
+
 #video{
     grid-area: video;
+    margin-bottom: 50%;
 }
 
 .aboutMe{
     display: grid;
-    grid-template-columns: 33% 34% 33%;
+    grid-template-columns: 30% 30% 40%;
     grid-template-rows: 15% 30% 55%;
-    grid-template-areas: "historia historia historia" "historia historia video" "historia historia video"; 
+    grid-template-areas: "cita cita cita" "historia historia video" "historia historia video"; 
     font-size: large;
+
 }
 
 /*Aspectos del Contacto*/
 
 .frame{
-    margin: 5px 5px 5px 5px;
+    margin-top: 2%;
+    margin-left: 3%;
+    margin-right: 3%;
 }
 
 .contacto{
     display: block;
     margin: 3px 3px 3px 3px;
-    font-size: larger;
-    background-color: $mypurple;
+    font-size: 30px;
 }
