@@ -146,6 +146,9 @@ footer {
 
 #cita {
   grid-area: cita;
+  font-style: italic;
+  font-size: 150%;
+  margin-bottom: 25%;
 }
 
 #video {
@@ -158,6 +161,9 @@ footer {
   grid-template-columns: 30% 30% 40%;
   grid-template-rows: 15% 30% 55%;
   grid-template-areas: "cita cita cita" "historia historia video" "historia historia video";
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
   font-size: large;
 }
 
